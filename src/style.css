@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 110%;
+    padding: 10px 5px 10px 0px;
+}
+
+.logoporto {
+    width: 100%;
+    cursor: pointer;
+}
+
+.usu-icon {
+    margin-left: 170%;
+    cursor: pointer;
+}
+
+.header_menu_list {
+    display: flex;
+    gap: 65px;
+    list-style-type: none;
+    margin-left: 3%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #272525;
+}
+
+.header__menu-list__item  {
+    position: relative;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.header__menu-list__item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 1.2px;
+    background-color: #322f2f;
+    transition: 0.2s ease-in-out;
+}
+
+.header__menu-list__item:hover::before {
+    width: 100%;
+}
+
+.titulo-subtitulo {
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo {
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.subtitulo {
+    font-weight: 400;
+    font-size: 100%;
+    margin-top: 1%;
+}
+
+
+.form-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-label {
+    color: #787474;
+    background: #F1EEEE;
+    ;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.required {
+    color: #F01313;
+}
+
+.form-select,
+.form-input {
+    width: 30%;
+    color: #787474;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #F1EEEE;
+    font-family: Montserrat;
+    font-size: 80%;
+    height: 35px;
+}
+
+.form-select,
+.form-input,
+.form-button {
+    margin: auto;
+    margin-bottom: 2%;
+    display: block;
+}
+
+.foto-bike {
+    margin: 0 auto;
+    height: 25vh;
+    width: 25%;
+    border-radius: 3%;
+    background-color: #F1EEEE;
+    border: 0.3px solid black;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.camera-icon {
+    width: 10%;
+    margin-top: 10vh;
+}
+
+.titulo-foto {
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 90%;
+    font-weight: 500;
+    margin-bottom: 3px;
+    height: 10%;
+}
+
+.adc-acessorio {
+    margin-right: 16%;
+    margin-bottom: 3%;
+}
+
+
+.botao-icon {
+    width: 2%;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.adc-acess-titulo {
+    font-family: Montserrat;
+    font-size: 90%;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.form-button {
+    width: 8%;
+    background: #02A0FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 4px 54px 0px #02A0FF;
+    padding: 10px;
+    cursor: pointer;
+    height: 4.5vh;
+    margin-top: 3%;
+}
+
+@media(min-width: 946px) and (max-width: 1285.60px) {
+    .usu-icon {
+        margin-left: 120%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 30%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+}
+
+@media(min-width: 1175.20px) and (max-width: 1284px) {
+    .usu-icon {
+        margin-left: 110%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 30%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+}
+
+@media(min-width: 1162px) and (max-width: 1175.20px) {
+    .usu-icon {
+        margin-left: 100%;
+    }
+}
+
+@media(min-width: 1074px) and (max-width: 1162px) {
+    .usu-icon {
+        margin-left: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 32%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 34%;
+    }
+}
+
+@media(min-width: 956px) and (max-width:1074px) {
+    .usu-icon {
+        margin-left: 70%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 34%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 36%;
+    }
+}
+
+
+@media(min-width: 910px) and (max-width:956px) {
+    .usu-icon {
+        margin-left: 60%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 39%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 38%;
+    }
+
+    .form-button {
+        width: 10%;
+    }
+}
+
+@media(min-width: 840px) and (max-width:910px) {
+    .usu-icon {
+        margin-left: 50%;
+
+    }
+
+    header .container {
+        font-size: 100%;
+    }
+
+    .titulo {
+        font-size: 190%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 40%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 38%;
+    }
+
+    .form-button {
+        width: 11%;
+    }
+
+}
+
+@media(min-width: 787px) and (max-width:840px) {
+    .usu-icon {
+        margin-left: 40%;
+    }
+
+    header .container {
+        font-size: 100%;
+    }
+
+    .titulo {
+        font-size: 180%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 41%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 40%;
+    }
+
+    .form-button {
+        width: 12%;
+    }
+
+
+}
+
+@media(min-width: 728px) and (max-width:787px) {
+    .usu-icon {
+        margin-left: 30%;
+    }
+
+    header .container {
+        font-size: 100%;
+    }
+
+    .titulo {
+        font-size: 170%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 43%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 43%;
+    }
+
+    .form-button {
+        width: 13%;
+    }
+
+}
+
+@media(min-width: 674px) and (max-width:728px) {
+    .usu-icon {
+        margin-left: 20%;
+    }
+
+    header .container {
+        font-size: 100%;
+    }
+
+    .titulo {
+        font-size: 160%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 45%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 45%;
+    }
+
+    .form-button {
+        width: 14%;
+    }
+}
+
+@media(min-width: 619px) and (max-width:674px) {
+    .usu-icon {
+        margin-left: 10%;
+    }
+
+    header .container {
+        font-size: 100%;
+    }
+
+    .titulo {
+        font-size: 150%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 47%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 47%;
+    }
+
+    .form-button {
+        width: 13%;
+    }
+}
+
+@media(min-width: 571px) and (max-width:619px) {
+    .usu-icon {
+        margin-left: -1%;
+    }
+
+    header .container {
+        font-size: 100%;
+    }
+
+    .titulo {
+        font-size: 140%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 47%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 49%;
+    }
+
+    .form-button {
+        width: 14%;
+    }
+}
+
+@media(min-width: 500px) and (max-width:571px) {
+    .header_menu_list {
+        gap: 45px;
+    }
+
+    .usu-icon {
+        margin-left: 20%;
+    }
+
+    header .container {
+        font-size: 90%;
+    }
+
+    .titulo {
+        font-size: 130%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 49%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 51%;
+    }
+
+    .form-button {
+        width: 15%;
+    }
+}
+
+
+@media(min-width: 458px) and (max-width:500px) {
+    .header_menu_list {
+        gap: 30px;
+    }
+
+    .usu-icon {
+        margin-left: 26%;
+    }
+
+    header .container {
+        font-size: 90%;
+    }
+
+    .titulo {
+        font-size: 120%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 51%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 53%;
+    }
+
+    .form-button {
+        width: 14%;
+    }
+
+    .form-button {
+        width: 15%;
+    }
+}
+
+@media(min-width: 300px) and (max-width:458px) {
+    .header_menu_list {
+        gap: 30px;
+    }
+
+    .usu-icon {
+        margin-left: 20%;
+    }
+
+    header .container {
+        font-size: 90%;
+    }
+
+    .titulo {
+        font-size: 110%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 53%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 55%;
+    }
+
+    .form-button {
+        width: 18%;
+    }
+}
+
+@media(min-width: 392px) and (max-width:431px) {
+    .header_menu_list {
+        gap: 30px;
+    }
+
+    .usu-icon {
+        margin-left: 10%;
+    }
+
+    header .container {
+        font-size: 90%;
+    }
+
+    .titulo {
+        font-size: 100%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 65%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 57%;
+    }
+
+    .form-button {
+        width: 18%;
+    }
+}
+
+@media(min-width: 356px) and (max-width:392px) {
+    .header_menu_list {
+        gap: 30px;
+    }
+
+    .usu-icon {
+        margin-left: 1%;
+    }
+
+    header .container {
+        font-size: 90%;
+    }
+
+    .titulo {
+        font-size: 100%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 65%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 59%;
+    }
+
+    .form-button {
+        width: 22%;
+    }
+}
+
+@media(min-width: 356px) and (max-width:392px) {
+    .header_menu_list {
+        gap: 30px;
+    }
+
+    .usu-icon {
+        margin-left: 1%;
+    }
+
+    header .container {
+        font-size: 90%;
+    }
+
+    .titulo {
+        font-size: 100%;
+    }
+
+    .subtitulo {
+        font-size: 90%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 67%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 61%;
+    }
+
+    .form-button {
+        width: 24%;
+    }
+}
+
+@media(min-width: 339px) and (max-width:392px) {
+    .header_menu_list {
+        gap: 30px;
+    }
+
+    .usu-icon {
+        margin-left: -5%;
+    }
+
+    header .container {
+        font-size: 90%;
+    }
+
+    .logoporto {
+        width: 10.3%;
+    }
+
+    .titulo {
+        font-size: 100%;
+    }
+
+    .subtitulo {
+        font-size: 70%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 68%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 63%;
+    }
+
+    .form-button {
+        width: 25%;
+    }
+}
+
+@media(min-width: 100px) and (max-width:339px) {
+
+    .titulo {
+        font-size: 100%;
+    }
+
+    .subtitulo {
+        font-size: 70%;
+    }
+
+    .foto-bike {
+        height: 25vh;
+        width: 70%;
+    }
+
+    .camera-icon {
+        width: 10%;
+        margin-top: 10vh;
+    }
+
+    .form-select,
+    .form-input {
+        width: 65%;
+    }
+
+    .form-button {
+        width: 33%;
+    }
+}
