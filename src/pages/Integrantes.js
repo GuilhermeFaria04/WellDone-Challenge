@@ -14,7 +14,7 @@ export default function Integrantes() {
 
                 <div class="titulo-subtitulo">
                     <h1 class="titulo">REPOSITÓRIO</h1><br/>
-                        <a class="subtitulo" href="www.github.com">Link do projeto - Clique aqui!</a>
+                        <a class="subtitulo" href="https://github.com/GuilhermeFaria04/WellDone-Challenge">Link do projeto - Clique aqui!</a>
                 </div>
             </div>
         </main>
