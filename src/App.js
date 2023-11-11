@@ -2,18 +2,18 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Fotos from './pages/Fotos';
 import Vistoria from './pages/Vistoria';
-import Integrantes from './pages/Integrantes';
-import Header from './components/header';
+import Login from './pages/Login';
+import Cadastro from './pages/Cadastro';
 
 
 function App() {
   return (
    <BrowserRouter>
-      <Header/>
       <Routes>
-        <Route path='/' element={<Vistoria/>} />
+        <Route path='/' element={<Login/>} />
+        <Route path='/cadastro' element={<Cadastro/>}/>
         <Route path='/enviofotos' element={<Fotos/>}/>
-        <Route path='/integrantes' element={<Integrantes/>}/>
+        <Route path='/vistoria' element={<Vistoria/>}/>
       </Routes>
    </BrowserRouter>
   );
