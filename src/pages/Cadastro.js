@@ -1,6 +1,7 @@
 import { useState } from "react"
 import logo from "../img/logoporto.svg"
 import { useNavigate } from "react-router-dom"
+import axios from "axios"
 
 
 export default function Cadastro() {
@@ -8,17 +9,35 @@ export default function Cadastro() {
     const [email, setEmail] = useState('')
     const [cpf, setCpf] = useState('')
     const [cep, setCep] = useState('')
-    const [endereco, setEndereco] = useState('')
+    const [logradouro, setLogradouro] = useState('')
     const [comp, setComp] = useState('')
     const [senha, setSenha] = useState('')
+    const [cidade, setCidade] = useState('')
+    const [numero, setNumero] = useState('')
     const navegacao = useNavigate()
 
+
+    function api(){
+        const promise = axios.get(
+            `https://viacep.com.br/ws/${cep}/json`
+        )
+        promise.then((res) => {
+            setCidade(res.data.localidade)
+            setLogradouro(res.data.logradouro)
+        })
+    }
+
+    if (cep.length === 8) {
+        api()
+    }
+
     function cadastro(){
+        localStorage.setItem('cep', cep)
         navegacao('/')
     }
     return (
         <div class="auth-container">
-           <img src={logo}/>
+           <img src={logo} alt="Logo Porto"/>
             <form onSubmit={cadastro}>
                 <input 
                     placeholder="Nome *"
@@ -39,22 +58,36 @@ export default function Cadastro() {
                     type="text"
                     value={cpf}
                     onChange={(e) => setCpf(e.target.value)}
-                    required
                     maxLength="11"
+                    required                   
                 />
                 <input 
                     placeholder="CEP *"
                     type="text"
                     value={cep}
                     onChange={(e) => setCep(e.target.value)}
-                    required
                     maxLength="8"
+                    required                   
                 />
                 <input 
-                    placeholder="Endereço *"
+                    placeholder="Cidade *"
                     type="text"
-                    value={endereco}
-                    onChange={(e) => setEndereco(e.target.value)}
+                    value={cidade}
+                    disabled
+                    required
+                />
+                <input 
+                    placeholder="Rua/Avenida *"
+                    type="text"
+                    value={logradouro}
+                    onChange={(e) => setLogradouro(e.target.value)}
+                    required
+                />
+                <input 
+                    placeholder="Número *"
+                    type="text"
+                    value={numero}
+                    onChange={(e) => setNumero(e.target.value)}
                     required
                 />
                 <input 
