@@ -65,7 +65,7 @@ export default function Vistoria() {
                                 <h1 class="adc-acess-titulo">Adicionar acessório</h1>
                         </div>
                         
-                        <Button/>
+                        <Button rota='/enviofotos'/>
                 </form>
 
 
